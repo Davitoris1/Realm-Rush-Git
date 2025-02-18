@@ -1,23 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bcxraacal8px7"]
-
-[ext_resource type="Script" path="res://node_2d.gd" id="1_2jnui"]
-[ext_resource type="Texture2D" uid="uid://d2b6gvh2xevft" path="res://icon.svg" id="1_8tepo"]
-[ext_resource type="Script" path="res://character_body_2d.gd" id="2_p4bpq"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1f2y4"]
-size = Vector2(54.5, 122.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jx3hc"]
-size = Vector2(128.891, 123.241)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpkrc"]
-size = Vector2(139, 730)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0w2k4"]
-size = Vector2(162, 730)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_m56bk"]
-size = Vector2(59, 60)
+[gd_scene format=3 uid="uid://c3konfgqfq0ff"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_2jnui")
