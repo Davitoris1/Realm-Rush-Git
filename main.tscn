@@ -161,6 +161,10 @@ texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -51.0
+offset_right = 10.0
+offset_bottom = -51.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_awcrk")
@@ -174,7 +178,9 @@ tile_map_data = PackedByteArray("AAABAAcAAgAHAAAAAAAAAAcAAgAHAAAAAAD//wcAAgAHAAA
 tile_set = SubResource("TileSet_v55g5")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+visible = false
 position = Vector2(117, 131)
 scale = Vector2(4.20461, 4.07542)
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+visible = false
