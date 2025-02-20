@@ -1,0 +1,190 @@
+[gd_scene load_steps=7 format=4 uid="uid://c3konfgqfq0ff"]
+
+[ext_resource type="Texture2D" uid="uid://dwr8rsgr7gbvh" path="res://Green.png" id="1_1h81v"]
+[ext_resource type="Texture2D" uid="uid://ddkrnee54d85q" path="res://Terrain (16x16).png" id="2_oquw1"]
+[ext_resource type="Texture2D" uid="uid://r3oovgek3hlt" path="res://Untitled 3.png" id="2_vbk5u"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n34pd"]
+texture = ExtResource("2_vbk5u")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5qnsp"]
+texture = ExtResource("2_oquw1")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+5:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_v55g5"]
+sources/2 = SubResource("TileSetAtlasSource_5qnsp")
+sources/1 = SubResource("TileSetAtlasSource_n34pd")
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1h81v")
+stretch_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(137, 107)
+rotation = -0.00507498
+scale = Vector2(-2.89558, 3.39461)
+tile_map_data = PackedByteArray("AAABAAcAAgAHAAAAAAAAAAcAAgAHAAAAAAD//wcAAgAHAAAAAAD+/wcAAgAHAAAAAAD9/wcAAgAHAAAAAAD8/wcAAgAHAAAAAAD7/wcAAgAHAAAAAAD6/wcAAgAHAAAAAAD5/wcAAgAHAAAAAAD4/wcAAgAHAAAAAAD3/wcAAgAHAAAAAAD2/wcAAgAHAAAAAAD1/wcAAgAHAAAAAAD0/wcAAgAHAAAAAADz/wcAAgAHAAAAAADy/wcAAgAHAAAAAADx/wcAAgAHAAAAAADw/wcAAgAHAAAAAADv/wcAAgAHAAAAAADu/wcAAgAHAAAAAAABAAgAAgAHAAEAAAAAAAgAAgAHAAEAAAD//wgAAgAHAAEAAAD+/wgAAgAHAAEAAAD9/wgAAgAHAAEAAAD8/wgAAgAHAAEAAAD7/wgAAgAHAAEAAAD6/wgAAgAHAAEAAAD5/wgAAgAHAAEAAAD4/wgAAgAHAAEAAAD3/wgAAgAHAAEAAAD2/wgAAgAHAAEAAAD1/wgAAgAHAAEAAAD0/wgAAgAHAAEAAADz/wgAAgAHAAEAAADy/wgAAgAHAAEAAADx/wgAAgAHAAEAAADw/wgAAgAHAAEAAADv/wgAAgAHAAEAAADu/wgAAgAHAAEAAADt/wgAAgAHAAEAAADt/wcAAgAHAAAAAADt/wkAAgAHAAIAAADu/wkAAgAHAAIAAADv/wkAAgAHAAIAAADw/wkAAgAHAAIAAADx/wkAAgAHAAIAAADy/wkAAgAHAAIAAADz/wkAAgAHAAIAAAD0/wkAAgAHAAIAAAD1/wkAAgAHAAIAAAD2/wkAAgAHAAIAAAD3/wkAAgAHAAIAAAD4/wkAAgAHAAIAAAD5/wkAAgAHAAIAAAD6/wkAAgAHAAIAAAD7/wkAAgAHAAIAAAD8/wkAAgAHAAIAAAD9/wkAAgAHAAIAAAD+/wkAAgAHAAIAAAD//wkAAgAHAAIAAAAAAAkAAgAHAAIAAAABAAkAAgAHAAIAAAACAAgAAgAIAAEAAADs/wgAAgAHAAEAAADs/wcAAgAHAAAAAAACAAcAAgAIAAAAAAACAAkAAgAIAAIAAADq/wkAAgAGAAIAAADr/wkAAgAHAAIAAADs/wkAAgAHAAIAAADr/wgAAgAHAAEAAADq/wgAAgAGAAEAAADr/wcAAgAHAAAAAADq/wcAAgAGAAAAAAA=")
+tile_set = SubResource("TileSet_v55g5")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(117, 131)
+scale = Vector2(4.20461, 4.07542)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
