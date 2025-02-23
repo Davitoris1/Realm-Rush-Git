@@ -25,10 +25,15 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if Input.get_axis("left", "right"):
 		direction = Input.get_axis("left", "right")
+	if direction == -1:
+		sprite_2d.flip_h = true
+	else:
+		sprite_2d.flip_h = false
+		
 	velocity.x = direction * SPEED
 	
 
 	move_and_slide()
 	
-	var isLeft = velocity.x <0
-	sprite_2d.flip_h = isLeft
+	
+	
