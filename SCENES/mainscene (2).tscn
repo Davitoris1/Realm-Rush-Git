@@ -1,13 +1,10 @@
-[gd_scene load_steps=17 format=4 uid="uid://c3konfgqfq0ff"]
+[gd_scene load_steps=9 format=3 uid="uid://ctcg87oyjmyf8"]
 
 [ext_resource type="PackedScene" uid="uid://c3qihv7iaw28y" path="res://SCENES/MAINCHARACTER.tscn" id="1_2r88i"]
-[ext_resource type="Texture2D" uid="uid://enl3c2dl7mpr" path="res://background.png" id="2_dlecr"]
-[ext_resource type="Texture2D" uid="uid://da67gmnw3uhcy" path="res://background2.png" id="3_fe5i0"]
-[ext_resource type="Texture2D" uid="uid://ddvrow0h0cr3o" path="res://background3.png" id="4_ae8o2"]
-[ext_resource type="Texture2D" uid="uid://s10t2l1kjdyh" path="res://background4.png" id="5_wb4om"]
-[ext_resource type="Texture2D" uid="uid://dhi4hpm3j1mui" path="res://SCENES/tileset_water.png" id="6_7jjsn"]
-[ext_resource type="Texture2D" uid="uid://clna8g4fl1itx" path="res://SCENES/tileset_lava.png" id="7_wrbjs"]
-[ext_resource type="Texture2D" uid="uid://b2mwt10rx2dkt" path="res://SCENES/tileset_dirt.png" id="8_k5etg"]
+[ext_resource type="Texture2D" uid="uid://enl3c2dl7mpr" path="res://files/background.png" id="2_840um"]
+[ext_resource type="Texture2D" uid="uid://da67gmnw3uhcy" path="res://files/background2.png" id="3_e3r60"]
+[ext_resource type="Texture2D" uid="uid://ddvrow0h0cr3o" path="res://files/background3.png" id="4_f1r2g"]
+[ext_resource type="Texture2D" uid="uid://s10t2l1kjdyh" path="res://files/background4.png" id="5_6ry3e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43uqk"]
 size = Vector2(398.748, 24.4343)
@@ -18,166 +15,6 @@ size = Vector2(13, 571.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrpj8"]
 size = Vector2(14, 565)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_terrv"]
-texture = ExtResource("6_7jjsn")
-2:0/0 = 0
-3:0/0 = 0
-5:0/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-8:1/0 = 0
-10:1/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
-10:2/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-8:3/0 = 0
-9:3/0 = 0
-10:3/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m5r66"]
-texture = ExtResource("7_wrbjs")
-2:0/0 = 0
-4:0/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-9:1/0 = 0
-11:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-7:3/0 = 0
-8:3/0 = 0
-9:3/0 = 0
-10:3/0 = 0
-11:3/0 = 0
-12:3/0 = 0
-13:3/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-8:4/0 = 0
-9:4/0 = 0
-10:4/0 = 0
-11:4/0 = 0
-12:4/0 = 0
-9:5/0 = 0
-10:5/0 = 0
-11:5/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hmrup"]
-texture = ExtResource("7_wrbjs")
-2:0/0 = 0
-4:0/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-9:1/0 = 0
-11:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-7:3/0 = 0
-8:3/0 = 0
-9:3/0 = 0
-10:3/0 = 0
-11:3/0 = 0
-12:3/0 = 0
-13:3/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-8:4/0 = 0
-9:4/0 = 0
-10:4/0 = 0
-11:4/0 = 0
-12:4/0 = 0
-9:5/0 = 0
-10:5/0 = 0
-11:5/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bsd3w"]
-texture = ExtResource("8_k5etg")
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-8:1/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-8:3/0 = 0
-9:3/0 = 0
-10:3/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_orbhd"]
-sources/0 = SubResource("TileSetAtlasSource_terrv")
-sources/1 = SubResource("TileSetAtlasSource_m5r66")
-sources/2 = SubResource("TileSetAtlasSource_hmrup")
-sources/3 = SubResource("TileSetAtlasSource_bsd3w")
-
 [node name="Node" type="Node"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_2r88i")]
@@ -187,7 +24,7 @@ position = Vector2(17, -182)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bg"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("2_dlecr")
+texture = ExtResource("2_840um")
 centered = false
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Bg"]
@@ -196,7 +33,7 @@ motion_mirroring = Vector2(1024, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("3_fe5i0")
+texture = ExtResource("3_e3r60")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Bg"]
@@ -205,7 +42,7 @@ motion_mirroring = Vector2(1024, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer2"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("4_ae8o2")
+texture = ExtResource("4_f1r2g")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Bg"]
@@ -214,7 +51,7 @@ motion_mirroring = Vector2(1024, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer3"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("5_wb4om")
+texture = ExtResource("5_6ry3e")
 centered = false
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -237,10 +74,3 @@ shape = SubResource("RectangleShape2D_jar6x")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
 position = Vector2(1150, 283.5)
 shape = SubResource("RectangleShape2D_rrpj8")
-
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
-texture_filter = 1
-position = Vector2(13, 318)
-scale = Vector2(2.66947, 2.61324)
-tile_map_data = PackedByteArray("AAASAAYAAwADAAEAAAAMAAYAAwADAAEAAAAQAAYAAwADAAEAAAAHAAYAAwAEAAEAAAAJAAYAAwAEAAEAAAAAAAYAAwADAAEAAAAZAAYAAwAEAAEAAAAYAAYAAwADAAEAAAADAAYAAwAEAAEAAAAIAAYAAwADAAEAAAABAAYAAwAEAAEAAAACAAYAAwADAAEAAAAEAAYAAwADAAEAAAAFAAYAAwAEAAEAAAAGAAYAAwADAAEAAAAKAAYAAwADAAEAAAALAAYAAwAEAAEAAAANAAYAAwAEAAEAAAAOAAYAAwADAAEAAAAPAAYAAwAEAAEAAAARAAYAAwAEAAEAAAATAAYAAwAEAAEAAAAUAAYAAwADAAEAAAAVAAYAAwAEAAEAAAAWAAYAAwADAAEAAAAXAAYAAwAEAAEAAAAaAAYAAwADAAEAAAAbAAYAAwAEAAEAAAAcAAYAAwADAAEAAAAdAAYAAwAEAAEAAAAoAAYAAwADAAEAAAAuAAYAAwADAAEAAAAeAAYAAwAEAAEAAAAfAAYAAwAEAAEAAAApAAYAAwAEAAEAAAAqAAYAAwADAAEAAAAgAAYAAwAEAAEAAAAhAAYAAwAEAAEAAAAiAAYAAwAEAAEAAAAjAAYAAwAEAAEAAAAkAAYAAwADAAEAAAAlAAYAAwAEAAEAAAAmAAYAAwADAAEAAAAnAAYAAwAEAAEAAAArAAYAAwAEAAEAAAAsAAYAAwADAAEAAAAtAAYAAwAEAAEAAAD//wYAAwACAAEAAAAcAAcAAwADAAIAAAAdAAcAAwAEAAIAAAAeAAcAAwADAAIAAAAfAAcAAwAEAAIAAAAgAAcAAwADAAIAAAAhAAcAAwAEAAIAAAAiAAcAAwADAAIAAAAjAAcAAwAEAAIAAAAkAAcAAwADAAIAAAAlAAcAAwAEAAIAAAAmAAcAAwADAAIAAAAnAAcAAwAEAAIAAAAoAAcAAwADAAIAAAApAAcAAwAEAAIAAAAvAAYAAwAEAAEAAAAwAAYAAwAFAAEAAAAxAAYAAwAFAAEAAAAAAAcAAwADAAIAAAABAAcAAwAEAAIAAAACAAcAAwADAAIAAAADAAcAAwAEAAIAAAAEAAcAAwADAAIAAAAFAAcAAwAEAAIAAAAGAAcAAwADAAIAAAAHAAcAAwAEAAIAAAAIAAcAAwADAAIAAAAJAAcAAwAEAAIAAAAKAAcAAwADAAIAAAALAAcAAwAEAAIAAAAMAAcAAwADAAIAAAANAAcAAwAEAAIAAAAOAAcAAwADAAIAAAAPAAcAAwAEAAIAAAAQAAcAAwADAAIAAAARAAcAAwAEAAIAAAASAAcAAwADAAIAAAATAAcAAwAEAAIAAAAUAAcAAwADAAIAAAAVAAcAAwAEAAIAAAAWAAcAAwADAAIAAAAXAAcAAwAEAAIAAAAYAAcAAwADAAIAAAAZAAcAAwAEAAIAAAAaAAcAAwADAAIAAAAbAAcAAwAEAAIAAAAqAAcAAwADAAIAAAArAAcAAwAEAAIAAAAsAAcAAwADAAIAAAAtAAcAAwAEAAIAAAAwAAcAAwADAAIAAAAxAAcAAwAEAAIAAAAuAAcAAwADAAIAAAAvAAcAAwAEAAIAAAA=")
-tile_set = SubResource("TileSet_orbhd")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2mwt10rx2dkt"
-path="res://.godot/imported/tileset_dirt.png-c50f68a9426833e1acc5ad505e9e7cde.ctex"
+uid="uid://d2b6gvh2xevft"
+path="res://.godot/imported/icon.svg-3c0bb7c18bff660b714821676be02670.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SCENES/tileset_dirt.png"
-dest_files=["res://.godot/imported/tileset_dirt.png-c50f68a9426833e1acc5ad505e9e7cde.ctex"]
+source_file="res://files/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-3c0bb7c18bff660b714821676be02670.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
