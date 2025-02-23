@@ -1,30 +1,25 @@
-[gd_scene load_steps=14 format=4 uid="uid://b1ul556mpk54j"]
+[gd_scene load_steps=17 format=4 uid="uid://c3konfgqfq0ff"]
 
 [ext_resource type="PackedScene" uid="uid://c3qihv7iaw28y" path="res://SCENES/MAINCHARACTER.tscn" id="2_e8c3c"]
-[ext_resource type="Texture2D" uid="uid://enl3c2dl7mpr" path="res://background.png" id="3_lls65"]
-[ext_resource type="Texture2D" uid="uid://da67gmnw3uhcy" path="res://background2.png" id="4_cx8e6"]
-[ext_resource type="Texture2D" uid="uid://ddvrow0h0cr3o" path="res://background3.png" id="5_nj3rd"]
-[ext_resource type="Texture2D" uid="uid://s10t2l1kjdyh" path="res://background4.png" id="6_3ia8s"]
-[ext_resource type="PackedScene" uid="uid://dt4a1wtby4dp4" path="res://SCENES/enemy.tscn" id="7_c37ky"]
+[ext_resource type="Texture2D" uid="uid://enl3c2dl7mpr" path="res://files/background.png" id="3_lls65"]
+[ext_resource type="Texture2D" uid="uid://da67gmnw3uhcy" path="res://files/background2.png" id="4_cx8e6"]
+[ext_resource type="Texture2D" uid="uid://ddvrow0h0cr3o" path="res://files/background3.png" id="5_nj3rd"]
+[ext_resource type="Texture2D" uid="uid://s10t2l1kjdyh" path="res://files/background4.png" id="6_3ia8s"]
+[ext_resource type="Texture2D" uid="uid://dhi4hpm3j1mui" path="res://files/tileset_water.png" id="6_v2vt6"]
+[ext_resource type="Texture2D" uid="uid://clna8g4fl1itx" path="res://files/tileset_lava.png" id="7_h7ql1"]
+[ext_resource type="Texture2D" uid="uid://b2mwt10rx2dkt" path="res://files/tileset_dirt.png" id="8_vpxc6"]
 
-[sub_resource type="GDScript" id="GDScript_20jo3"]
-script/source = "extends Node
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43uqk"]
+size = Vector2(398.748, 23.8377)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jar6x"]
+size = Vector2(50, 581.5)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrpj8"]
+size = Vector2(46, 572)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-"
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5qnsp"]
-texture = ExtResource("1_uam8a")
-0:0/0 = 0
-1:0/0 = 0
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qm22u"]
+texture = ExtResource("6_v2vt6")
 2:0/0 = 0
 3:0/0 = 0
 5:0/0 = 0
@@ -184,7 +179,6 @@ sources/2 = SubResource("TileSetAtlasSource_y8brp")
 sources/3 = SubResource("TileSetAtlasSource_h2b0i")
 
 [node name="Node" type="Node"]
-script = SubResource("GDScript_20jo3")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_e8c3c")]
 position = Vector2(86, -189)
@@ -244,10 +238,6 @@ shape = SubResource("RectangleShape2D_jar6x")
 position = Vector2(1134, 287)
 shape = SubResource("RectangleShape2D_rrpj8")
 
-
-[node name="Enemy" parent="." instance=ExtResource("7_c37ky")]
-position = Vector2(747, 516)
-
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 texture_filter = 1
 position = Vector2(13, 318)
@@ -257,4 +247,3 @@ tile_set = SubResource("TileSet_7mi2k")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(571, 324)
-
