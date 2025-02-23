@@ -10,13 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://b2mwt10rx2dkt" path="res://files/tileset_dirt.png" id="8_vpxc6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43uqk"]
-size = Vector2(398.748, 31.1257)
+size = Vector2(398.748, 23.8377)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jar6x"]
-size = Vector2(50, 547.5)
+size = Vector2(50, 581.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrpj8"]
-size = Vector2(46, 543)
+size = Vector2(46, 572)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qm22u"]
 texture = ExtResource("6_v2vt6")
@@ -181,7 +181,7 @@ sources/3 = SubResource("TileSetAtlasSource_h2b0i")
 [node name="Node" type="Node"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_e8c3c")]
-position = Vector2(144, -209)
+position = Vector2(86, -189)
 
 [node name="Bg" type="ParallaxBackground" parent="."]
 
@@ -223,19 +223,19 @@ rotation = 3.13652
 scale = Vector2(2.89558, -3.39461)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-151.692, 127.949)
+position = Vector2(-151.692, 131.593)
 shape = SubResource("RectangleShape2D_43uqk")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(22, 274.25)
+position = Vector2(22, 291.25)
 shape = SubResource("RectangleShape2D_jar6x")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(1134, 272.5)
+position = Vector2(1134, 287)
 shape = SubResource("RectangleShape2D_rrpj8")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -244,3 +244,6 @@ position = Vector2(13, 318)
 scale = Vector2(2.66947, 2.61324)
 tile_map_data = PackedByteArray("AAASAAYAAwADAAEAAAAMAAYAAwADAAEAAAAQAAYAAwADAAEAAAAHAAYAAwAEAAEAAAAJAAYAAwAEAAEAAAAAAAYAAwADAAEAAAAZAAYAAwAEAAEAAAAYAAYAAwADAAEAAAADAAYAAwAEAAEAAAAIAAYAAwADAAEAAAABAAYAAwAEAAEAAAACAAYAAwADAAEAAAAEAAYAAwADAAEAAAAFAAYAAwAEAAEAAAAGAAYAAwADAAEAAAAKAAYAAwADAAEAAAALAAYAAwAEAAEAAAANAAYAAwAEAAEAAAAOAAYAAwADAAEAAAAPAAYAAwAEAAEAAAARAAYAAwAEAAEAAAATAAYAAwAEAAEAAAAUAAYAAwADAAEAAAAVAAYAAwAEAAEAAAAWAAYAAwADAAEAAAAXAAYAAwAEAAEAAAAaAAYAAwADAAEAAAAbAAYAAwAEAAEAAAAcAAYAAwADAAEAAAAdAAYAAwAEAAEAAAAoAAYAAwADAAEAAAAuAAYAAwADAAEAAAAeAAYAAwAEAAEAAAAfAAYAAwAEAAEAAAApAAYAAwAEAAEAAAAqAAYAAwADAAEAAAAgAAYAAwAEAAEAAAAhAAYAAwAEAAEAAAAiAAYAAwAEAAEAAAAjAAYAAwAEAAEAAAAkAAYAAwADAAEAAAAlAAYAAwAEAAEAAAAmAAYAAwADAAEAAAAnAAYAAwAEAAEAAAArAAYAAwAEAAEAAAAsAAYAAwADAAEAAAAtAAYAAwAEAAEAAAD//wYAAwACAAEAAAAcAAcAAwADAAIAAAAdAAcAAwAEAAIAAAAeAAcAAwADAAIAAAAfAAcAAwAEAAIAAAAgAAcAAwADAAIAAAAhAAcAAwAEAAIAAAAiAAcAAwADAAIAAAAjAAcAAwAEAAIAAAAkAAcAAwADAAIAAAAlAAcAAwAEAAIAAAAmAAcAAwADAAIAAAAnAAcAAwAEAAIAAAAoAAcAAwADAAIAAAApAAcAAwAEAAIAAAAvAAYAAwAEAAEAAAAwAAYAAwAFAAEAAAAxAAYAAwAFAAEAAAAAAAcAAwADAAIAAAABAAcAAwAEAAIAAAACAAcAAwADAAIAAAADAAcAAwAEAAIAAAAEAAcAAwADAAIAAAAFAAcAAwAEAAIAAAAGAAcAAwADAAIAAAAHAAcAAwAEAAIAAAAIAAcAAwADAAIAAAAJAAcAAwAEAAIAAAAKAAcAAwADAAIAAAALAAcAAwAEAAIAAAAMAAcAAwADAAIAAAANAAcAAwAEAAIAAAAOAAcAAwADAAIAAAAPAAcAAwAEAAIAAAAQAAcAAwADAAIAAAARAAcAAwAEAAIAAAASAAcAAwADAAIAAAATAAcAAwAEAAIAAAAUAAcAAwADAAIAAAAVAAcAAwAEAAIAAAAWAAcAAwADAAIAAAAXAAcAAwAEAAIAAAAYAAcAAwADAAIAAAAZAAcAAwAEAAIAAAAaAAcAAwADAAIAAAAbAAcAAwAEAAIAAAAqAAcAAwADAAIAAAArAAcAAwAEAAIAAAAsAAcAAwADAAIAAAAtAAcAAwAEAAIAAAAwAAcAAwADAAIAAAAxAAcAAwAEAAIAAAAuAAcAAwADAAIAAAAvAAcAAwAEAAIAAAD//wcAAwACAAIAAAA=")
 tile_set = SubResource("TileSet_7mi2k")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(571, 324)

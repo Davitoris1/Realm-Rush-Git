@@ -1,5 +1,6 @@
-[gd_scene load_steps=28 format=3 uid="uid://c3qihv7iaw28y"]
+[gd_scene load_steps=29 format=3 uid="uid://c3qihv7iaw28y"]
 
+[ext_resource type="Script" path="res://SCENES/MAINCHARACTER.gd" id="1_ry2di"]
 [ext_resource type="Texture2D" uid="uid://dbwkinr3gsctj" path="res://files/AnimationSheet_Character.png" id="2_mktt0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xm4qa"]
@@ -198,6 +199,7 @@ size = Vector2(70, 91)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(33, -213)
+script = ExtResource("1_ry2di")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
