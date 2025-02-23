@@ -199,6 +199,7 @@ size = Vector2(51, 87)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(33, -213)
+collision_layer = 3
 script = ExtResource("1_pe36u")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
