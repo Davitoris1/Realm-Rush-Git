@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=3 uid="uid://ctcg87oyjmyf8"]
+
+[ext_resource type="PackedScene" uid="uid://c3qihv7iaw28y" path="res://SCENES/MAINCHARACTER.tscn" id="1_2r88i"]
+[ext_resource type="Texture2D" uid="uid://enl3c2dl7mpr" path="res://files/background.png" id="2_840um"]
+[ext_resource type="Texture2D" uid="uid://da67gmnw3uhcy" path="res://files/background2.png" id="3_e3r60"]
+[ext_resource type="Texture2D" uid="uid://ddvrow0h0cr3o" path="res://files/background3.png" id="4_f1r2g"]
+[ext_resource type="Texture2D" uid="uid://s10t2l1kjdyh" path="res://files/background4.png" id="5_6ry3e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43uqk"]
+size = Vector2(398.748, 24.4343)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jar6x"]
+size = Vector2(13, 571.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrpj8"]
+size = Vector2(14, 565)
+
+[node name="Node" type="Node"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_2r88i")]
+position = Vector2(17, -182)
+
+[node name="Bg" type="ParallaxBackground" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Bg"]
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("2_840um")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Bg"]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1024, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer"]
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("3_e3r60")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="Bg"]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1024, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer2"]
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("4_f1r2g")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="Bg"]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1024, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer3"]
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("5_6ry3e")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(138, 165)
+rotation = 3.13652
+scale = Vector2(2.89558, -3.39461)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-151.692, 131.295)
+shape = SubResource("RectangleShape2D_43uqk")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(3.5, 286.25)
+shape = SubResource("RectangleShape2D_jar6x")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(1150, 283.5)
+shape = SubResource("RectangleShape2D_rrpj8")

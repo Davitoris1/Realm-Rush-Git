@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbwkinr3gsctj"
-path="res://.godot/imported/AnimationSheet_Character.png-180187841cf5dc54e553e7fb3b1c09a2.ctex"
+uid="uid://b2mwt10rx2dkt"
+path="res://.godot/imported/tileset_dirt.png-c6f8287ea30d751ca6f8d47398eb31f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AnimationSheet_Character.png"
-dest_files=["res://.godot/imported/AnimationSheet_Character.png-180187841cf5dc54e553e7fb3b1c09a2.ctex"]
+source_file="res://files/tileset_dirt.png"
+dest_files=["res://.godot/imported/tileset_dirt.png-c6f8287ea30d751ca6f8d47398eb31f2.ctex"]
 
 [params]
 
