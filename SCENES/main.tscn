@@ -1,14 +1,14 @@
-[gd_scene load_steps=9 format=4 uid="uid://c3konfgqfq0ff"]
+[gd_scene load_steps=12 format=4 uid="uid://c3konfgqfq0ff"]
 
-[ext_resource type="Texture2D" uid="uid://dxu8x5g4af36c" path="res://Terrain (16x16) copy.png" id="2_oquw1"]
-[ext_resource type="Texture2D" uid="uid://enl3c2dl7mpr" path="res://background.png" id="3_3rgv2"]
-[ext_resource type="PackedScene" uid="uid://c3qihv7iaw28y" path="res://SCENES/MAINCHARACTER.tscn" id="3_me3vr"]
-[ext_resource type="Texture2D" uid="uid://da67gmnw3uhcy" path="res://background2.png" id="4_x7je3"]
-[ext_resource type="Texture2D" uid="uid://ddvrow0h0cr3o" path="res://background3.png" id="5_dpjev"]
-[ext_resource type="Texture2D" uid="uid://s10t2l1kjdyh" path="res://background4.png" id="6_yee3t"]
+[ext_resource type="Texture2D" uid="uid://dxu8x5g4af36c" path="res://Terrain (16x16) copy.png" id="1_uam8a"]
+[ext_resource type="PackedScene" uid="uid://c3qihv7iaw28y" path="res://SCENES/MAINCHARACTER.tscn" id="2_e8c3c"]
+[ext_resource type="Texture2D" uid="uid://enl3c2dl7mpr" path="res://background.png" id="3_lls65"]
+[ext_resource type="Texture2D" uid="uid://da67gmnw3uhcy" path="res://background2.png" id="4_cx8e6"]
+[ext_resource type="Texture2D" uid="uid://ddvrow0h0cr3o" path="res://background3.png" id="5_nj3rd"]
+[ext_resource type="Texture2D" uid="uid://s10t2l1kjdyh" path="res://background4.png" id="6_3ia8s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5qnsp"]
-texture = ExtResource("2_oquw1")
+texture = ExtResource("1_uam8a")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -168,6 +168,15 @@ texture = ExtResource("2_oquw1")
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_5qnsp")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43uqk"]
+size = Vector2(398.748, 31.1257)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jar6x"]
+size = Vector2(50, 547.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrpj8"]
+size = Vector2(46, 543)
+
 [node name="Node" type="Node"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -178,15 +187,14 @@ scale = Vector2(-2.89558, 3.39461)
 tile_map_data = PackedByteArray("AAABAAcAAgAHAAAAAAAAAAcAAgAHAAAAAAD//wcAAgAHAAAAAAD+/wcAAgAHAAAAAAD9/wcAAgAHAAAAAAD8/wcAAgAHAAAAAAD7/wcAAgAHAAAAAAD6/wcAAgAHAAAAAAD5/wcAAgAHAAAAAAD4/wcAAgAHAAAAAAD3/wcAAgAHAAAAAAD2/wcAAgAHAAAAAAD1/wcAAgAHAAAAAAD0/wcAAgAHAAAAAADz/wcAAgAHAAAAAADy/wcAAgAHAAAAAADx/wcAAgAHAAAAAADw/wcAAgAHAAAAAADv/wcAAgAHAAAAAADu/wcAAgAHAAAAAAABAAgAAgAHAAIAAAAAAAgAAgAHAAIAAAD//wgAAgAHAAIAAAD+/wgAAgAHAAIAAAD9/wgAAgAHAAIAAAD8/wgAAgAHAAIAAAD7/wgAAgAHAAIAAAD6/wgAAgAHAAIAAAD5/wgAAgAHAAIAAAD4/wgAAgAHAAIAAAD3/wgAAgAHAAIAAAD2/wgAAgAHAAIAAAD1/wgAAgAHAAIAAAD0/wgAAgAHAAIAAADz/wgAAgAHAAIAAADy/wgAAgAHAAIAAADx/wgAAgAHAAIAAADw/wgAAgAHAAIAAADv/wgAAgAHAAIAAADu/wgAAgAHAAIAAADt/wgAAgAHAAIAAADt/wcAAgAHAAAAAADs/wgAAgAHAAIAAADs/wcAAgAHAAAAAAACAAcAAgAIAAAAAADr/wgAAgAHAAIAAADq/wgAAgAGAAIAAADr/wcAAgAHAAAAAADq/wcAAgAGAAAAAAACAP//AgAHAAEAAAACAAAAAgAHAAEAAAACAAEAAgAHAAEAAAACAAIAAgAHAAEAAAACAAMAAgAHAAEAAAACAAQAAgAHAAEAAAACAAUAAgAHAAEAAAACAAYAAgAHAAEAAADq////AgAHAAEAAADq/wAAAgAHAAEAAADq/wEAAgAHAAEAAADq/wIAAgAHAAEAAADq/wMAAgAHAAEAAADq/wQAAgAHAAEAAADq/wUAAgAHAAEAAADq/wYAAgAHAAEAAAACAAgAAgAIAAIAAADq//7/AgAHAAEAAAACAP7/AgAHAAEAAADq//3/AgAHAAEAAAACAP3/AgAHAAEAAAA=")
 tile_set = SubResource("TileSet_v55g5")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_me3vr")]
-visible = false
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_e8c3c")]
 position = Vector2(144, -209)
 
 [node name="Bg" type="ParallaxBackground" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Bg"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("3_3rgv2")
+texture = ExtResource("3_lls65")
 centered = false
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Bg"]
@@ -195,7 +203,7 @@ motion_mirroring = Vector2(1024, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("4_x7je3")
+texture = ExtResource("4_cx8e6")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="Bg"]
@@ -204,7 +212,7 @@ motion_mirroring = Vector2(1024, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer2"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("5_dpjev")
+texture = ExtResource("5_nj3rd")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="Bg"]
@@ -213,5 +221,27 @@ motion_mirroring = Vector2(1024, 0)
 
 [node name="Sprite2D2" type="Sprite2D" parent="Bg/ParallaxLayer3"]
 scale = Vector2(1.125, 1.125)
-texture = ExtResource("6_yee3t")
+texture = ExtResource("6_3ia8s")
 centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(138, 165)
+rotation = 3.13652
+scale = Vector2(2.89558, -3.39461)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-151.692, 127.949)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_43uqk")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(22, 274.25)
+shape = SubResource("RectangleShape2D_jar6x")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(1134, 272.5)
+shape = SubResource("RectangleShape2D_rrpj8")

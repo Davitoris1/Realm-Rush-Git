@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://c3qihv7iaw28y"]
 
-[ext_resource type="Script" path="res://SCENES/maincharacter.gd" id="1_pe36u"]
+[ext_resource type="Script" path="res://gds/maincharacter.gd" id="1_pe36u"]
 [ext_resource type="Texture2D" uid="uid://dbwkinr3gsctj" path="res://AnimationSheet_Character.png" id="2_mktt0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xm4qa"]
@@ -195,7 +195,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0glch"]
-size = Vector2(108.312, 115.875)
+size = Vector2(51, 87)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(33, -213)
@@ -211,5 +211,5 @@ autoplay = "Jump"
 frame_progress = 0.93042
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(64.8438, 702)
+position = Vector2(66.5, 714.5)
 shape = SubResource("RectangleShape2D_0glch")
