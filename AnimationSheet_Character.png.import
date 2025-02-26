@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream:AnimationSheet_Character.png.import
 uid="uid://draly5cyjkj8a"
+=======
+uid="uid://bjn3yhqjiwfpm"
+>>>>>>> Stashed changes:files/AnimationSheet_Character.png.import
 path="res://.godot/imported/AnimationSheet_Character.png-f1a81558932deeb768d3f9d8670b75b0.ctex"
 metadata={
 "vram_texture": false

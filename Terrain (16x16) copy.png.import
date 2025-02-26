@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream:Terrain (16x16) copy.png.import
 uid="uid://b7b683xuhq6"
+=======
+uid="uid://dkvbljjvclivk"
+>>>>>>> Stashed changes:files/Terrain (16x16) copy.png.import
 path="res://.godot/imported/Terrain (16x16) copy.png-c7701d123f2ffee12ab258a21abbf621.ctex"
 metadata={
 "vram_texture": false

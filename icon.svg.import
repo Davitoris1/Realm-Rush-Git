@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream:icon.svg.import
 uid="uid://cp671a810akye"
+=======
+uid="uid://bf0khuvcq5lmj"
+>>>>>>> Stashed changes:files/icon.svg.import
 path="res://.godot/imported/icon.svg-3c0bb7c18bff660b714821676be02670.ctex"
 metadata={
 "vram_texture": false
