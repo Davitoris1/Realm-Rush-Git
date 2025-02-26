@@ -134,7 +134,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Jump",
-"speed": 7.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -206,8 +206,9 @@ texture_filter = 1
 position = Vector2(63, 707)
 scale = Vector2(3.18621, 3.18621)
 sprite_frames = SubResource("SpriteFrames_h3oyq")
-animation = &"new_animation"
+animation = &"Jump"
 autoplay = "Jump"
+frame_progress = 0.052928
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(66.5, 714.5)
